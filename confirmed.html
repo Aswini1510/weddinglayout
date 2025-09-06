@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Layout Tasks-Wedding Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="layout.css">
+        <style>
+          .container {
+      padding: 20px;
+    }
+    p{font-size: 24px;}
+
+    .confirmation {
+      text-align: center;
+    }
+
+    .confirmation img {
+      width: 200px;
+      margin: 20px auto;
+    }
+
+    .order-details, .customer-info, .summary, .addresses {
+      background: #E6E6FA;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+    }
+
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .summary-table td {
+      padding: 5px;
+    }
+
+    .summary-table .total {
+      font-weight: bold;
+    }
+
+    .continue-btn {
+      display: block;
+      width: 300px;
+      margin: 30px auto;
+      background-color: #f4a400;
+      color: white;
+      border: none;font-size: 20px;
+      padding: 12px 32px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+        </style>
+    </head>
+    <body>
+      <header id="header">
+        <div class="container">
+        <img src="drive-download-20250901T125210Z-1-001/download__23_-removebg-preview.png" style="width: 15%;">
+        <div class="text">Cherish </div>
+        <div class="text1">By</div>
+        <div class="text2">Wed</div>
+        <div class="text3">Knot</div>
+        <div class="text4">Craft</div>
+        <form action="/search" method="get" class="search">
+            <input type="search" name="q" placeholder="Search... " style="background-color: #E6E6FA;" class="input" onclick="document.location='search.html'"> 
+            <i class="fas fa-search search-icon"  style="font-size: 24px;"></i>  
+            <i style="font-size:32px;padding: 30px;" class="fa" onclick="document.location='login.html'">&#xf007;</i>
+            <i class="fa fa-heart" onclick="document.location='wishlist.html'" style="font-size:32px;padding: 30px;"></i>
+            <span class="superscript"><i style="font-size:32px;padding: 30px;" class="fa" class="cart-icon" onclick="openModal()" >&#xf07a;</i>
+             <span class="super">1</span></span>
+             <div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Qty</th>
+          <th>Unit Price</th>
+          <th>Tax</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="product-info">
+              SKU: KSN0054<br>
+              SN (SN 54)
+            </div>
+          </td>
+          <td>2</td>
+          <td>Rs.65.00</td>
+          <td>18%</td>
+          <td>Rs.130.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <p><strong>Sub Total:</strong> Rs.130.00</p>
+      <p><strong>Total Tax:</strong> Rs.23.40</p>
+      <p><strong>Total:</strong> Rs.153.40</p>
+    </div>
+
+    <div class="warning">
+      TO CHECKOUT PLEASE ADD MINIMUM 100 ITEMS TO THE CART
+    </div>
+
+    <div class="buttons">
+      <button class="continue-btn"><a href="home.html" style="text-decoration: none;color: black;">Continue Shopping</a> </button>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function openModal() {
+    document.getElementById("cartModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("cartModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("cartModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+         </div></div>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="wedding.html">Wedding Invitation</a></li>
+                <div class="menu-item">
+                    <button>Special Occations</button>
+                  <div class="dropdown-content">
+                     <a href="#">Birthday Invitations</a>
+                    <a href="#">Puperty Cards</a>
+                    <a href="#">Luxury Invitations</a>
+                    <a href="#">Ear Boring Cards</a>
+                    <a href="#">Engagement Cards</a>
+                    <a href="#">House Warming</a>
+                    <a href="#">Anniversary Cards</a>
+                </div>
+              </div>
+              <div class="menu-item">
+                    <button>Theme Cards</button>                
+                <div class="dropdown-content">
+                    <a href="#">Beach Theme Cards</a>
+                    <a href="#">Bride Theme Cards</a>
+                    <a href="#">Box Cards</a>
+                    <a href="#">Single Sheet Cards</a>
+                    </div></div>
+                 <div class="menu-item">
+                    <button>Scroll Invitation</button>    
+                <div class="dropdown-content">
+                    <a href="#">Small size Scroll</a>
+                    <a href="#">Box Scroll</a>
+                    <a href="#">Only Scroll</a>
+                    <a href="#">High End Scroll</a>
+                    </div></div>
+                <div class="menu-item">
+                    <button>Digital Invitation</button>    
+                <div class="dropdown-content">
+                <div class="dropdown-content">
+                    <a href="#">Whatsapp Cards</a>
+                    <a href="#">Save the Date Cards</a>                    
+                    </div></div>                    
+            </ul>
+        </nav></div>
+    </header>
+    <div class="container">
+
+  <div class="confirmation">
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Order Confirmed" />
+    <h2>Order Confirmed</h2>
+  </div>
+
+  <div class="order-details" >
+    <div class="section-title" >Your Order</div>
+    <p><strong>Order ID:</strong> 356958190</p>
+    <p>Thank you! Your order has been confirmed.</p>
+    <div class="info-row" style="border: 2px solid white;padding: 10px;">
+      <div>
+        <img src="drive-download-20250901T125210Z-1-001/bluewed1.png" width="20%" alt="Product" /><br>
+        <button style="background-color: #f4a400;">SKU: KSN0054<br>SN (SN 54)</button>
+        <h2>Rs.153.00</h2>
+      </div>
+  </div>
+
+  <div class="summary" style="border: 2px solid white;padding: 10px;">
+    <div class="section-title">Order Summary</div>
+    <table class="summary-table">
+      <tr><td>Subtotal</td><td>Rs. 153.40</td></tr>
+      <tr><td>Shipping Charge</td><td>Rs. 0.00</td></tr>
+      <tr><td>Taxes</td><td>18%</td></tr>
+      <tr><td>Discount</td><td>Rs. 5.00</td></tr>
+      <tr class="total"><td>Total</td><td>Rs. 148.00</td></tr>
+    </table>
+  </div>
+
+  <div class="customer-info" style="border: 2px solid white;padding: 10px;">
+    <div class="section-title">Customer</div>
+    <p>👤 Jhon</p>
+    <p>📧 jhon057@gmail.com</p>
+    <p>📦 1 order</p>
+  </div>
+
+  <div class="addresses" style="border: 2px solid white;padding: 10px;">
+    <div class="section-title">Shipping Address</div>
+    <p>👤 Jhon</p>
+    <p>123 Elm Street<br>Anytown, ABC 12345<br>Anywhere</p>
+
+  </div>
+
+    <div class="section-title" style="border: 2px solid white;padding: 10px;">Billing Address
+    <p>Same as Shipping Address</p></div>
+  </div>
+
+  <button class="continue-btn" onclick="document.location='wedding.html'">Continue Shopping</button>
+</div>
+
+
+    <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-section">
+      <img src="drive-download-20250901T125210Z-1-001/FAQ_s (1).png" style="width: 80%;">
+      <h4>Largest wedding card collections in Chennai</h4>
+    </div>
+    
+    <div class="footer-section">
+      <h2>Information</h2>    
+            <li><a href="about.html">About Us </a></li><br>
+            <li><a href="contact.html" >Contact Us</a> </li><br>
+            <li><a href="faq.html">FAQ</a></li><br>
+            <li><a href="order.html">How to order wedding invitation online?</a></li>      
+    </div>
+    <div class="footer-section">
+      <h2>Quick Access</h2>      
+            <li><a href="home.html">Home</a> </li><br>
+            <li><a href="wedding.html">Wedding Cards</a></li><br>
+            <li><a href="hinduwedding.html">Hindu Wedding Cards</a></li>        
+    </div>
+    <div class="footer-section">
+      <h2>Contact Us</h2>
+      <p><i class='fas fa-phone-alt' style='font-size:24px'></i> : +91 9876543210</p>
+      <p> <i class='far fa-envelope' style='font-size:24px'></i> : wedtype@weddingcards.com</p>      
+      <p>Operating hours: 10:00  A.M to 10:00 P.M</p>
+      <p><b>Monday - Sunday</b></p>
+    </div></div>
+    <h4>Follow us with : <i class="fab fa-instagram fa-2x" style="color:#E4405F;"></i> <i class="fab fa-facebook fa-2x" style="color: rgb(19, 84, 236);"></i> <i class="fab fa-youtube fa-2x" style="color:#FF0000;"></i>
+  <i class="fab fa-whatsapp fa-2x" style="color:#25D366;"></i></h4>
+    <hr>  
+  <p style="text-align: center;font-size: 20px;"> © Wed knot craft India Private Limited. All rights reserved.</p>
+  
+</footer>
+    </body>

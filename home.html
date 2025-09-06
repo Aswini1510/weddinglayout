@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Tasks-Wedding Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+        <img src="drive-download-20250901T125210Z-1-001/download__23_-removebg-preview.png" style="width: 15%;">
+        <div class="text">Cherish </div>
+        <div class="text1">By</div>
+        <div class="text2">Wed</div>
+        <div class="text3">Knot</div>
+        <div class="text4">Craft</div>
+        <form action="/search" method="get" class="search">
+            <input type="search" name="q" placeholder="Search... " style="background-color: #E6E6FA;" class="input" onclick="document.location='search.html'"> 
+            <i class="fas fa-search search-icon"  style="font-size: 24px;"></i>  
+            <i style="font-size:32px;padding: 30px;" class="fa" onclick="document.location='login.html'">&#xf007;</i>
+            <i class="fa fa-heart" onclick="document.location='wishlist.html'" style="font-size:32px;padding: 30px;"></i>
+            <span class="superscript"><i style="font-size:32px;padding: 30px;" class="fa" class="cart-icon" onclick="openModal()" >&#xf07a;</i>
+             <span class="super">1</span></span>
+             <div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Qty</th>
+          <th>Unit Price</th>
+          <th>Tax</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="product-info">
+              SKU: KSN0054<br>
+              SN (SN 54)
+            </div>
+          </td>
+          <td>2</td>
+          <td>Rs.65.00</td>
+          <td>18%</td>
+          <td>Rs.130.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <p><strong>Sub Total:</strong> Rs.130.00</p>
+      <p><strong>Total Tax:</strong> Rs.23.40</p>
+      <p><strong>Total:</strong> Rs.153.40</p>
+    </div>
+
+    <div class="warning">
+      TO CHECKOUT PLEASE ADD MINIMUM 100 ITEMS TO THE CART
+    </div>
+
+    <div class="buttons">
+      <button class="continue-btn"><a href="home.html" style="text-decoration: none;color: black;">Continue Shopping</a> </button>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function openModal() {
+    document.getElementById("cartModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("cartModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("cartModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+         </div></div>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="wedding.html">Wedding Invitation</a></li>
+                <div class="menu-item">
+                    <button>Special Occations</button>
+                  <div class="dropdown-content">
+                     <a href="#">Birthday Invitations</a>
+                    <a href="#">Puperty Cards</a>
+                    <a href="#">Luxury Invitations</a>
+                    <a href="#">Ear Boring Cards</a>
+                    <a href="#">Engagement Cards</a>
+                    <a href="#">House Warming</a>
+                    <a href="#">Anniversary Cards</a>
+                </div>
+              </div>
+              <div class="menu-item">
+                    <button>Theme Cards</button>                
+                <div class="dropdown-content">
+                    <a href="#">Beach Theme Cards</a>
+                    <a href="#">Bride Theme Cards</a>
+                    <a href="#">Box Cards</a>
+                    <a href="#">Single Sheet Cards</a>
+                    </div></div>
+                 <div class="menu-item">
+                    <button>Scroll Invitation</button>    
+                <div class="dropdown-content">
+                    <a href="#">Small size Scroll</a>
+                    <a href="#">Box Scroll</a>
+                    <a href="#">Only Scroll</a>
+                    <a href="#">High End Scroll</a>
+                    </div></div>
+                <div class="menu-item">
+                    <button>Digital Invitation</button>    
+                <div class="dropdown-content">
+                <div class="dropdown-content">
+                    <a href="#">Whatsapp Cards</a>
+                    <a href="#">Save the Date Cards</a>                    
+                    </div></div>                    
+            </ul>
+        </nav></div>
+    </header>
+    <div class="story">
+        <img src="/istockphoto-1262582928-612x612.jpg" width="100%">
+        <h2>Your Love Story Begins Here</h2>
+        <p>Create stunning wedding invitations that capture the essence of your special day. Elegant designs, heartfelt words, and everything you need to make your first impression unforgettable.</p>
+        <button onclick="document.location='wedding.html'" class="btn"  style="width: 18%;padding: 10px;border-radius: 10px;background-color: orange;"> Get your style</button>
+    </div>
+
+    <div class="story2">
+        <img src="drive-download-20250901T125210Z-1-001/Premium Vector _ Wedding stationery for indian couple with oriental ornaments.jpg" style="width: 80%;margin: 20px;height: 80vh;">
+        <a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a>
+    </div>
+
+    <div class="story3">
+        <h1>Unique & Exclusive Invitation Cards</h1>
+        <p>Because Each Wedding is Truly Unique and Memorable</p>
+        <div class="gallery">
+            <div class="gallery-item">  
+            <img src="drive-download-20250901T125210Z-1-001/Editable_Indian_Wedding_Invitations___Hindu_Wedding_Invite___Flower_Frame_Wedding_Card___Printable___Instant_Download___Corjl_IWIM_-_Etsy_UK-removebg-preview.png" alt="Hindu Wedding Cards" width="600" height="400">
+            <div class="desc">Hindu Wedding Cards</div>
+        </div>
+        <div class="gallery-item">
+            <img src="drive-download-20250901T125210Z-1-001/Invitation_Luxury_PSD__High_Quality_Free_PSD_Templates_for_Download___Freepik-removebg-preview.png" alt="Luxury Cards" width="300" height="400">
+            <div class="desc">Luxury Cards</div>
+        </div>
+        <div class="gallery-item">  
+            <img src="drive-download-20250901T125210Z-1-001/Floral_Indian_wedding_invitation_card_design_in_frabic-removebg-preview.png" alt="Floral Wedding Cards" width="600" height="400">
+            <div class="desc">Floral Wedding Cards</div>
+        </div>
+    </div><br><br><br><br>
+
+    <div class="story3">
+        <h1>Theme Based Invitation</h1>
+        <p>Theme Based Invitation</p>
+        <div class="gallery">
+            <div class="gallery-item">  
+            <img src="drive-download-20250901T125210Z-1-001/Beach_Wedding_Invitation_Set__Wedding_Invitation_Template_2_Set__Editable_Wedding_Invitation__Editable_on_Canva___Digital_Download__Seashell-removebg-preview.png" alt="Beach Theme Cards" width="600" height="400">
+            <div class="desc">Beach Theme Cards</div>
+        </div>
+        <div class="gallery-item">
+            <img src="drive-download-20250901T125210Z-1-001/Evite_Paperless_Wedding_Invitation_Aqua_Love_Birds-removebg-preview.png" alt="Birds Theme Cards" width="600" height="400">
+            <div class="desc">Birds Theme Cards</div>
+        </div>
+        <div class="gallery-item">  
+            <img src="drive-download-20250901T125210Z-1-001/Watercolor_Arabian_Lattice_Arch_Muslim_Wedding_Invitation-removebg-preview.png" alt="Palace Theme Cards" width="600" height="400">
+            <div class="desc">Palace Theme Cards</div>
+        </div>
+    </div>
+
+    <div class="step4">
+        <img src="drive-download-20250901T125210Z-1-001/Screenshot 2025-09-05 at 10.14.37 PM.png" width="100%">
+    </div>
+
+    <div class="story3">
+        <h1>Simple and Affordable Wedding Cards</h1>
+        <div class="card-container">
+        <div class="card">
+            <img src="drive-download-20250901T125210Z-1-001/Wedding_card_design_in_red_satin_cloth-removebg-preview.png" alt="Beach Theme Cards" width="400" height="300">
+            <p>Red Invite Cards with Bride and Groom Names</p>
+            <p>Rs.10.25 <i style='font-size:36px;padding-left: 150px;' class='far'>&#xf004;</i><i class="fas fa-shopping-bag" style="font-size:32px; padding-left: 36px;"></i></p> 
+        </div>
+        <div class="card">
+            <img src="drive-download-20250901T125210Z-1-001/Download_Decorative_Hindu_Wedding_Card_Vector_for_free-removebg-preview.png" alt="Birds Theme Cards" width="400" height="300">
+            <p>Simple Red and Yellow card Invite with Bride ang Groom Names</p>
+            <p>Rs.5.00 <i style='font-size:36px;padding-left: 150px;' class='far'>&#xf004;</i><i class="fas fa-shopping-bag" style="font-size:32px; padding-left: 36px;"></i></p> 
+        </div>
+       <div class="card">  
+            <img src="drive-download-20250901T125210Z-1-001/Hindu_Low_Cost_Wedding_Invitation_Card_Design-removebg-preview.png" alt="Palace Theme Cards" width="350" height="300">
+            <p>Red Vertical Personal invite with Bride and Groom Names</p>
+            <p>Rs.7.00 <i style='font-size:36px;padding-left: 150px;' class='far'>&#xf004;</i><i class="fas fa-shopping-bag" style="font-size:32px; padding-left: 36px;"></i></p> 
+        </div>
+        <div class="card">
+            <img src="drive-download-20250901T125210Z-1-001/download__5_-removebg-preview.png" alt="Beach Theme Cards" width="350" height="300">
+            <p>White Vertical Personal invite with Bride and Groom Names</p>
+            <p>Rs.7.50 <i style='font-size:36px;padding-left: 150px;' class='far'>&#xf004;</i><i class="fas fa-shopping-bag" style="font-size:32px; padding-left: 36px;"></i></p> 
+        </div>
+        <div class="card">
+            <img src="drive-download-20250901T125210Z-1-001/Hindu_Wedding_Cards_Online___Traditional_Designs_for_Sacred_Ceremonies-removebg-preview.png" alt="Birds Theme Cards" width="400" height="300">
+            <p>Brown and Vinayagar Picture Invite with Bride and Groom Names</p>
+            <p>Rs.7.00 <i style='font-size:36px;padding-left: 150px;' class='far'>&#xf004;</i><i class="fas fa-shopping-bag" style="font-size:32px; padding-left: 36px;"></i></p> 
+        </div>
+        <div class="card">
+            <img src="drive-download-20250901T125210Z-1-001/Elegant_Hindu_Wedding_Invitation_Hindu_Wedding_Invite_Simple_Gold_Indian_Wedding_Invitation_Reception_Card_Shaadi_Invitation_Wedding_Card-removebg-preview.png" alt="Palace Theme Cards" width="400" height="300">
+            <p>Maroo card with Rangoli Theme Personal Invite with Bride and Groom Names</p>
+            <p>Rs.9.00 <i style='font-size:36px;padding-left: 150px;' class='far'>&#xf004;</i><i class="fas fa-shopping-bag" style="font-size:32px; padding-left: 36px;fill: white;"></i> </p> 
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="step4">
+    <img src="drive-download-20250901T125210Z-1-001/Adobe Express - file.png" width="100%" >
+</div>
+
+<div class="step5">
+        <div class="card1-container1">
+        <div class="card1">
+            <img src="drive-download-20250901T125210Z-1-001/hindu.jpeg" alt="Beach Theme Cards" width="350" height="400">
+            <p>Hindu Invitation Collection</p>
+            <button onclick="document.location='hinduwedding.html'" class="btn1"> Buy Now</button> 
+        </div>
+        <div class="card1">
+            <img src="drive-download-20250901T125210Z-1-001/chris.jpeg" alt="Birds Theme Cards" width="350" height="400">
+            <p>Christian Invitation Collection</p>
+            <button class="btn1"> Buy Now</button>
+        </div>
+       <div class="card1">  
+            <img src="drive-download-20250901T125210Z-1-001/muslim.jpeg" alt="Palace Theme Cards" width="350" height="400">
+            <p>Muslim Invitation Collection</p>
+           <button class="btn1"> Buy Now</button>
+        </div>
+        <div class="card1">
+            <img src="drive-download-20250901T125210Z-1-001/inter.jpeg" alt="Beach Theme Cards" width="350" height="400">
+            <p>Interfaith Invitation Collection</p>
+            <button class="btn1"> Buy Now</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="story3">
+<h1>WHAT CLIENT SAY ABOUT US</h1>
+<section class="test-section">
+          <div class="test-contain">
+            <div class="test-card">
+              <img src="drive-download-20250901T125210Z-1-001/boy.jpeg" alt="client1" class="client-avatar" > 
+              <h3>James</h3>                           
+                <h4>Absolutely Beautiful invites!</h4>
+                <p>We were blown away by the quality and elegance of our wedding invitations. The paper felt luxurious, and the printing was flawless. Everyone keeps asking where we got them from!</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+        
+            </div>
+            <div class="test-card">
+              <img src="drive-download-20250901T125210Z-1-001/girl.jpeg" alt="client2" class="client-avatar">  
+              <h3>Harshitha</h3>
+                <h4>Customized to Perfection</h4>
+                <p>We wanted something but unique, and they absolutely nailed it. Colors, fonts, wordings - everything was exactly how we imagined. Fast turnaround too!</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="test-card">
+              <img src="drive-download-20250901T125210Z-1-001/pp3.jpeg" alt="client3" class="client-avatar">  
+              <h3>Santhosh</h3>
+                <h4>Great quality at a great price.</h4>
+                <p>We were on a tight budget, but we didn't want to compromise on style. These invites were not only affordable but looked premium. Arrived quickly and packaged beautifully</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+        </section><br><br><br><br><br><br>
+
+    <div class="story3">
+        <h1>How It Works</h1>
+        <div class="card2-container2">
+            <div class="card2">
+            <img src="drive-download-20250901T125210Z-1-001/order2.jpeg" alt="Order Sample" width="100" height="100">
+            <p>Order Sample</p>
+            </div>
+            <div class="card2">
+            <img src="drive-download-20250901T125210Z-1-001/order3.png" alt="Sample Order" width="100" height="100">
+            <p>Get Sample Order in 5 Days</p>
+            </div>
+            <div class="card2">
+            <img src="drive-download-20250901T125210Z-1-001/approve1.png" alt="Palace Theme Cards" width="100" height="100">
+            <p>Approve Digital Draft</p>
+            </div>
+            <div class="card2">
+            <img src="drive-download-20250901T125210Z-1-001/bulk1.png" alt="Beach Theme Cards" width="100" height="100">
+            <p>Place Your Bulk Order</p>
+            </div>
+            <div class="card2">
+            <img src="drive-download-20250901T125210Z-1-001/deliver1.png" alt="Beach Theme Cards" width="100" height="100">
+            <p>Print & Delivery</p>
+            </div>
+           
+        </div>
+    </div>
+</div>
+</div>
+
+  <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-section">
+      <img src="drive-download-20250901T125210Z-1-001/FAQ_s (1).png" style="width: 80%;">
+      <h4>Largest wedding card collections in Chennai</h4>
+    </div>
+    
+    <div class="footer-section">
+      <h2>Information</h2>    
+            <li><a href="about.html">About Us </a></li><br>
+            <li><a href="contact.html" >Contact Us</a> </li><br>
+            <li><a href="faq.html">FAQ</a></li><br>
+            <li><a href="order.html">How to order wedding invitation online?</a></li>      
+    </div>
+    <div class="footer-section">
+      <h2>Quick Access</h2>      
+            <li><a href="home.html">Home</a> </li><br>
+            <li><a href="wedding.html">Wedding Cards</a></li><br>
+            <li><a href="hinduwedding.html">Hindu Wedding Cards</a></li>        
+    </div>
+    <div class="footer-section">
+      <h2>Contact Us</h2>
+      <p><i class='fas fa-phone-alt' style='font-size:24px'></i> : +91 9876543210</p>
+      <p> <i class='far fa-envelope' style='font-size:24px'></i> : wedtype@weddingcards.com</p>      
+      <p>Operating hours: 10:00  A.M to 10:00 P.M</p>
+      <p><b>Monday - Sunday</b></p>
+    </div></div>
+    <h4>Follow us with : <i class="fab fa-instagram fa-2x" style="color:#E4405F;"></i> <i class="fab fa-facebook fa-2x" style="color: rgb(19, 84, 236);"></i> <i class="fab fa-youtube fa-2x" style="color:#FF0000;"></i>
+  <i class="fab fa-whatsapp fa-2x" style="color:#25D366;"></i></h4>
+    <hr>  
+  <p style="text-align: center;font-size: 20px;"> © Wed knot craft India Private Limited. All rights reserved.</p>
+  
+</footer>
+
+
+
+
+
+
+</body>
+</html>

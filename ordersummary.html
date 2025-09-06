@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Layout Tasks-Wedding Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="layout.css">
+        <style>
+            body { background-color: #e7e6f8;padding: 20px;display: flex;gap: 30px;}
+
+    .checkout-container {display: flex;width: 100%;font-size: 28px;padding: 20px;gap: 30px;}
+
+    .payment-section, .summary-section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;height: 700px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .payment-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .payment-methods img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .upi-options {
+      margin-top: 20px;
+    }
+
+    .upi-options label {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .upi-options input {
+      margin-right: 10px;
+    }
+
+    .cod-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #808080;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .info-note {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #333;
+    }
+
+    .save-check {
+      margin-top: 10px;
+    }
+
+    .summary-section h2 {
+      text-align: center;
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+    }
+
+    .coupon {
+      display: flex;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      padding: 8px;
+      border-radius: 5px;
+      margin: 10px 0;
+      font-weight: bold;
+      color: green;
+    }
+
+    .total-button {
+      margin-top: 20px;
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .shipping-free {
+      color: gray;
+      font-size: 12px;
+    }
+            </style>
+    </head>
+<body>
+    <div class="checkout-container">
+
+  <div class="payment-section">
+    <h3>Payment Methods</h3>
+    <div class="payment-methods">
+      <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard">
+      <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+      <img src="https://img.icons8.com/color/48/paypal.png" alt="Paypal">
+   
+    </div>
+
+    <div class="upi-options">
+      <label><input type="radio" name="upi" checked> Paytm</label>
+      <label><input type="radio" name="upi"> Gpay</label>
+      <label><input type="radio" name="upi"> Phonepe</label>
+      <label><input type="radio" name="upi"> Cred</label>
+    </div>
+
+    <div class="cod-button">
+      <span>💵 Cash on Delivery</span>
+    </div>
+
+    <div class="info-note">
+      ℹ️ Credit card payments may take up to 24 hours to be processed!
+    </div>
+
+    <div class="save-check">
+      <input type="checkbox" checked> Save my payment details for future purchase
+    </div>
+  </div>
+
+ 
+  <div class="summary-section">
+    <h2>Order Summary</h2>
+    <div class="summary-line"><span>Date:</span><span>16th Apr</span></div>
+    <div class="summary-line"><span>Time:</span><span>5.35pm</span></div>
+    <hr>
+    <div class="summary-line"><strong>Products</strong></div>
+    <div class="summary-line"><span>The Blue Wedding Card</span><span>2</span></div>
+    <div class="summary-line"><span>Added Compliment</span><span>Hold Bag</span></div>
+
+    <div class="coupon">
+      <span>MAR0057</span>
+      <span>Coupon Applied</span>
+    </div>
+
+    <div class="summary-line"><span>Subtotal</span><span>Rs. 153.40</span></div>
+    <div class="summary-line"><span>Shipping</span><span>0.00 <span class="shipping-free">(Free)</span></span></div>
+
+    <button class="total-button" onclick="document.location='confirmed.html'">Pay Rs.153.40</button>
+  </div>
+</div>
+        
+
+</body>
+

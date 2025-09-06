@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Tasks-Wedding Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="layout.css">
+ <style>
+  .hero-search {
+      text-align: center;
+      padding: 20px;
+    }
+    .hero-search h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .hero-search .search-bar {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .hero-search .search-bar button {
+      padding: 10px 20px;
+      border: none;
+      background: #f57a8c;
+      color: #fff;
+      border-radius: 5px 0 0 5px;
+      cursor: pointer;
+    }
+    .hero-search .search-bar input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 400px;
+      border-radius: 0 5px 5px 0;
+    }
+    .tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px;
+    }
+    .tags span {
+      background: #fff;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    /* Cards Section */
+    .section {
+      padding: 20px 40px;
+    }
+    .section h3 {
+      margin-bottom: 15px;
+    }
+    .cards {
+      display: flex;flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;height: 200px;
+      padding: 10px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+      text-align: center;justify-content: space-evenly;
+    }
+    .card img {
+     width: 80%;height: 150px;
+      border-radius: 10px;
+    }
+    .card p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+ </style>
+</head>
+<body>
+   <header id="header">
+        <div class="container">
+        <img src="drive-download-20250901T125210Z-1-001/download__23_-removebg-preview.png" style="width: 15%;">
+        <div class="text">Cherish </div>
+        <div class="text1">By</div>
+        <div class="text2">Wed</div>
+        <div class="text3">Knot</div>
+        <div class="text4">Craft</div>
+        <form action="/search" method="get" class="search">
+            <input type="search" name="q" placeholder="Search... " style="background-color: #E6E6FA;" class="input" onclick="document.location='search.html'"> 
+            <i class="fas fa-search search-icon"  style="font-size: 24px;"></i>  
+            <i style="font-size:32px;padding: 30px;" class="fa" onclick="document.location='login.html'">&#xf007;</i>
+            <i class="fa fa-heart" onclick="document.location='wishlist.html'" style="font-size:32px;padding: 30px;"></i>
+            <span class="superscript"><i style="font-size:32px;padding: 30px;" class="fa" class="cart-icon" onclick="openModal()" >&#xf07a;</i>
+             <span class="super">1</span></span>
+             <div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Qty</th>
+          <th>Unit Price</th>
+          <th>Tax</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="product-info">
+              SKU: KSN0054<br>
+              SN (SN 54)
+            </div>
+          </td>
+          <td>2</td>
+          <td>Rs.65.00</td>
+          <td>18%</td>
+          <td>Rs.130.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <p><strong>Sub Total:</strong> Rs.130.00</p>
+      <p><strong>Total Tax:</strong> Rs.23.40</p>
+      <p><strong>Total:</strong> Rs.153.40</p>
+    </div>
+
+    <div class="warning">
+      TO CHECKOUT PLEASE ADD MINIMUM 100 ITEMS TO THE CART
+    </div>
+
+    <div class="buttons">
+      <button class="continue-btn"><a href="home.html" style="text-decoration: none;color: black;">Continue Shopping</a> </button>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function openModal() {
+    document.getElementById("cartModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("cartModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("cartModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+         </div></div>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="wedding.html">Wedding Invitation</a></li>
+                <div class="menu-item">
+                    <button>Special Occations</button>
+                  <div class="dropdown-content">
+                     <a href="#">Birthday Invitations</a>
+                    <a href="#">Puperty Cards</a>
+                    <a href="#">Luxury Invitations</a>
+                    <a href="#">Ear Boring Cards</a>
+                    <a href="#">Engagement Cards</a>
+                    <a href="#">House Warming</a>
+                    <a href="#">Anniversary Cards</a>
+                </div>
+              </div>
+              <div class="menu-item">
+                    <button>Theme Cards</button>                
+                <div class="dropdown-content">
+                    <a href="#">Beach Theme Cards</a>
+                    <a href="#">Bride Theme Cards</a>
+                    <a href="#">Box Cards</a>
+                    <a href="#">Single Sheet Cards</a>
+                    </div></div>
+                 <div class="menu-item">
+                    <button>Scroll Invitation</button>    
+                <div class="dropdown-content">
+                    <a href="#">Small size Scroll</a>
+                    <a href="#">Box Scroll</a>
+                    <a href="#">Only Scroll</a>
+                    <a href="#">High End Scroll</a>
+                    </div></div>
+                <div class="menu-item">
+                    <button>Digital Invitation</button>    
+                <div class="dropdown-content">
+                <div class="dropdown-content">
+                    <a href="#">Whatsapp Cards</a>
+                    <a href="#">Save the Date Cards</a>                    
+                    </div></div>                    
+            </ul>
+        </nav></div>
+    </header>
+   <div class="hero-search">
+    <h1><b>Everything You Need, to Plan your Dream Wedding</b></h1>
+    <p>Search for vendors, cards, ideas and real wedding stories and more!</p>
+    <div class="search-bar">
+      <button>All</button>
+      <input type="text" placeholder="Search">
+    </div>
+    <div class="tags">
+      <span>Wedding Cards ✕</span>
+      <span>Scroll Cards ✕</span>
+      <span>Theme Cards ✕</span>
+      <span>Birthday Cards ✕</span>
+      <span>Engagement Cards ✕</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Ideas for you</h3>
+    <div class="cards">
+      <div class="card" style="background-color: #7c6a0e;">
+        <img src="drive-download-20250901T125210Z-1-001/Premium Vector _ Indian wedding invitation card template design.jpg" width="" alt="">
+        <p>Hindu Wedding Card</p>
+      </div>
+      <div class="card" style="background-color: #8abf6e;">
+        <img src="drive-download-20250901T125210Z-1-001/Ganesha_Invitation__Hindu_Wedding_Invitation___Indian_Wedding__sri_Lankan_Wedding___Tamil_Invitation__Lavender_Lilac_Purle_-_Etsy_UK-removebg-preview.png" width="" alt="">
+        <p>simple Wedding Card</p>
+      </div>
+      <div class="card" style="background-color: #aaa9f4;">
+        <img src="drive-download-20250901T125210Z-1-001/Premium Vector _ Wedding stationery for indian couple with oriental ornaments.jpg" width="" alt="">
+        <p>Muslim Wedding Card</p>
+      </div>
+      <div class="card" style="background-color: #E4405F;">
+        <img src="drive-download-20250901T125210Z-1-001/download__13_-removebg-preview.png" width="" alt="">
+        <p>Scroll Wedding Card</p>
+      </div>
+      <div class="card" style="background-color: #ecd685;">
+        <img src="drive-download-20250901T125210Z-1-001/download__10_-removebg-preview.png" width="" alt="">
+        <p>Luxury Wedding Card</p>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h3>Popular on this</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="drive-download-20250901T125210Z-1-001/download__14_-removebg-preview.png" alt="">
+        <p>Post Theme Wedding Card</p>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250901T125210Z-1-001/download__20_-removebg-preview.png" alt="">
+        <p>Scroll Wedding Card</p>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250901T125210Z-1-001/download__18_-removebg-preview.png" alt="">
+        <p>Theme Wedding Card</p>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250901T125210Z-1-001/download__3_-removebg-preview.png" alt="">
+        <p>Customize Wedding Card</p>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250901T125210Z-1-001/download__25_-removebg-preview.png" alt="">
+        <p>Laser Wedding Card</p>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250901T125210Z-1-001/download__21_-removebg-preview.png" alt="">
+        <p>Hindu Wedding Card</p>
+      </div>
+    </div>
+  </div>
+    <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-section">
+      <img src="drive-download-20250901T125210Z-1-001/FAQ_s (1).png" style="width: 80%;">
+      <h4>Largest wedding card collections in Chennai</h4>
+    </div>
+    
+    <div class="footer-section">
+      <h2>Information</h2>    
+            <li><a href="about.html">About Us </a></li><br>
+            <li><a href="contact.html" >Contact Us</a> </li><br>
+            <li><a href="faq.html">FAQ</a></li><br>
+            <li><a href="order.html">How to order wedding invitation online?</a></li>      
+    </div>
+    <div class="footer-section">
+      <h2>Quick Access</h2>      
+            <li><a href="home.html">Home</a> </li><br>
+            <li><a href="wedding.html">Wedding Cards</a></li><br>
+            <li><a href="hinduwedding.html">Hindu Wedding Cards</a></li>        
+    </div>
+    <div class="footer-section">
+      <h2>Contact Us</h2>
+      <p><i class='fas fa-phone-alt' style='font-size:24px'></i> : +91 9876543210</p>
+      <p> <i class='far fa-envelope' style='font-size:24px'></i> : wedtype@weddingcards.com</p>      
+      <p>Operating hours: 10:00  A.M to 10:00 P.M</p>
+      <p><b>Monday - Sunday</b></p>
+    </div></div>
+    <h4>Follow us with : <i class="fab fa-instagram fa-2x" style="color:#E4405F;"></i> <i class="fab fa-facebook fa-2x" style="color: rgb(19, 84, 236);"></i> <i class="fab fa-youtube fa-2x" style="color:#FF0000;"></i>
+  <i class="fab fa-whatsapp fa-2x" style="color:#25D366;"></i></h4>
+    <hr>  
+  <p style="text-align: center;font-size: 20px;"> © Wed knot craft India Private Limited. All rights reserved.</p>
+  
+</footer>
+</body>
